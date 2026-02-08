@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مطبخ أطفال</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+  ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
+  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r;
+    ttq._t=ttq._t||{},ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{},ttq._o[e]=n||{};
+    n=document.createElement("script");
+    n.type="text/javascript";n.async=!0;
+    n.src=r+"?sdkid="+e+"&lib="+t;
+    e=document.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(n,e)
+  };
+
+  ttq.load('D63SS3RC77UC1EV4CLQG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  padding: 14px;
+  max-width: 420px;
+  margin: auto;
+}
+
+img.product {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.form-box {
+  background: #111;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+/* زر واتساب */
+.whatsapp-float {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54px;
+  height: 54px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.whatsapp-float img {
+  width: 28px;
+}
+
+/* مربع موحد */
+.input-box {
+  display: flex;
+  align-items: center;
+  background: #000;
+  border: 2px solid #555;
+  border-radius: 12px;
+  padding: 0 10px;
+  height: 54px;
+  margin-bottom: 12px;
+}
+
+.input-box span {
+  font-size: 14px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.input-box .country {
+  color: #e91e63;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.input-box input {
+  flex: 1;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.address-box {
+  background: #000;
+  border: 2px solid #555;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.address-box textarea {
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.order {
+  background: #e91e63;
+  color: #fff;
+  margin-top: 6px;
+}
+
+.whatsapp {
+  background: #25d366;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.msg {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin: 14px 0 6px;
+  font-size: 12px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<a href="https://wa.me/9647737643575" target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+<div class="container">
+
+  <img class="product" src="https://m.media-amazon.com/images/I/81KTWxfYjcL._AC_SL1500_.jpg">
+
+  <h1>كل هذا بـ20 الف</h1>
+
+  <div class="form-box">
+
+    <!-- رقم الهاتف -->
+    <div class="input-box">
+      <span>رقم الهاتف</span>
+      <span class="country">+964</span>
+      <input type="tel" id="phone" placeholder="77XXXXXXXX"
+      inputmode="numeric" maxlength="11"
+      oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+    </div>
+
+    <!-- العنوان -->
+    <div class="address-box">
+      <textarea id="address" placeholder="العنوان الكامل (المحافظة، المنطقة، أقرب نقطة)"></textarea>
+    </div>
+
+    <button class="order" onclick="sendOrder()">اطلب الآن</button>
+
+    <a href="https://wa.me/9647737643575" target="_blank">
+      <button class="whatsapp">تواصل واتساب</button>
+    </a>
+
+    <div class="msg" id="msg"></div>
+  </div>
+
+  <div class="footer">تم الترويج بواسطة وكالة AK</div>
+</div>
+
+<script>
+const TELEGRAM_TOKEN = '7602821198:AAHHrMz_Ny9BtNf2TLqHTJHZxD_UbUiMsME';
+const CHAT_ID = '-1002694463022';
+const STORAGE_KEY = "last_order_time";
+
+function sendOrder() {
+  const phoneInput = document.getElementById("phone");
+  const addressInput = document.getElementById("address");
+  const msg = document.getElementById("msg");
+
+  const phone = phoneInput.value.trim();
+  const address = addressInput.value.trim();
+
+  if (phone.length < 10 || phone.length > 11) {
+    alert("رقم الهاتف غير صحيح");
+    return;
+  }
+
+  if (!address) {
+    alert("اكتب العنوان");
+    return;
+  }
+
+  const lastTime = localStorage.getItem(STORAGE_KEY);
+  const now = Date.now();
+
+  if (lastTime && now - lastTime < 86400000) {
+    msg.style.color = "red";
+    msg.innerText = "⚠️ مسموح إرسال طلب واحد فقط كل 24 ساعة";
+    return;
+  }
+
+  const text =
+`📞 الرقم: ${phone}
+📍 العنوان: ${address}`;
+
+  fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+    method: "POST",
+    headers: {"Content-Type":"application/json"},
+    body: JSON.stringify({ chat_id: CHAT_ID, text })
+  }).then(res => {
+    if (res.ok) {
+      ttq.track('Lead');
+      localStorage.setItem(STORAGE_KEY, now);
+      msg.style.color = "lightgreen";
+      msg.innerText = "✅ تم إرسال الطلب بنجاح";
+      phoneInput.value = "";
+      addressInput.value = "";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
