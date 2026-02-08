@@ -9,24 +9,11 @@
 <!-- TikTok Pixel Code Start -->
 <script>
 !function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
-  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
-  ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
-  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
-  ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
-  ttq.load=function(e,n){
-    var r="https://analytics.tiktok.com/i18n/pixel/events.js";
-    ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r;
-    ttq._t=ttq._t||{},ttq._t[e]=+new Date;
-    ttq._o=ttq._o||{},ttq._o[e]=n||{};
-    n=document.createElement("script");
-    n.type="text/javascript";n.async=!0;
-    n.src=r+"?sdkid="+e+"&lib="+t;
-    e=document.getElementsByTagName("script")[0];
-    e.parentNode.insertBefore(n,e)
-  };
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 
-  ttq.load('D63SS3RC77UC1EV4CLQG');
+  ttq.load('D64I1BJC77U1M7M27VUG');
   ttq.page();
 }(window, document, 'ttq');
 </script>
@@ -58,7 +45,6 @@ h1 {
   text-align: center;
   font-size: 22px;
   margin-bottom: 16px;
-  color: #fff;
 }
 
 .form-box {
@@ -67,7 +53,6 @@ h1 {
   border-radius: 14px;
 }
 
-/* زر واتساب */
 .whatsapp-float {
   position: fixed;
   top: 10px;
@@ -87,7 +72,6 @@ h1 {
   width: 28px;
 }
 
-/* مربع موحد */
 .input-box {
   display: flex;
   align-items: center;
@@ -191,7 +175,6 @@ button {
 
   <div class="form-box">
 
-    <!-- رقم الهاتف -->
     <div class="input-box">
       <span>رقم الهاتف</span>
       <span class="country">+964</span>
@@ -200,7 +183,6 @@ button {
       oninput="this.value=this.value.replace(/[^0-9]/g,'')">
     </div>
 
-    <!-- العنوان -->
     <div class="address-box">
       <textarea id="address" placeholder="العنوان الكامل (المحافظة، المنطقة، أقرب نقطة)"></textarea>
     </div>
