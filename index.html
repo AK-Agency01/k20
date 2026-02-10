@@ -9,11 +9,24 @@
 <!-- TikTok Pixel Code Start -->
 <script>
 !function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+  ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
+  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r;
+    ttq._t=ttq._t||{},ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{},ttq._o[e]=n||{};
+    n=document.createElement("script");
+    n.type="text/javascript";n.async=!0;
+    n.src=r+"?sdkid="+e+"&lib="+t;
+    e=document.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(n,e)
+  };
 
-  ttq.load('D64I1BJC77U1M7M27VUG');
+  ttq.load('D63SS3RC77UC1EV4CLQG');
   ttq.page();
 }(window, document, 'ttq');
 </script>
@@ -25,8 +38,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 body {
   margin: 0;
   font-family: Tahoma, Arial, sans-serif;
-  background: #000;
-  color: #fff;
+  background: #f6f7fb;
 }
 
 .container {
@@ -37,146 +49,138 @@ body {
 
 img.product {
   width: 100%;
-  border-radius: 14px;
-  margin-bottom: 16px;
+  border-radius: 18px;
+  margin-bottom: 14px;
 }
 
 h1 {
+  color: #6c5ce7;
+  font-size: 24px;
   text-align: center;
-  font-size: 22px;
-  margin-bottom: 16px;
+  margin: 6px 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #636e72;
+  margin-bottom: 12px;
+}
+
+.price {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.price span {
+  color: #00b894;
+  font-weight: bold;
 }
 
 .form-box {
-  background: #111;
-  padding: 16px;
-  border-radius: 14px;
-}
-
-.whatsapp-float {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 54px;
-  height: 54px;
-  background: #25d366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.whatsapp-float img {
-  width: 28px;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .input-box {
   display: flex;
   align-items: center;
-  background: #000;
-  border: 2px solid #555;
-  border-radius: 12px;
-  padding: 0 10px;
-  height: 54px;
-  margin-bottom: 12px;
+  border: 2px solid #dfe6e9;
+  border-radius: 14px;
+  padding: 0 12px;
+  height: 56px;
+  margin-bottom: 14px;
+  background: #ffffff;
 }
 
 .input-box span {
   font-size: 14px;
   white-space: nowrap;
   margin-left: 8px;
+  color: #2d3436;
 }
 
 .input-box .country {
-  color: #e91e63;
   font-weight: bold;
-  margin-left: 8px;
+  color: #6c5ce7;
 }
 
 .input-box input {
   flex: 1;
-  height: 100%;
-  background: transparent;
   border: none;
-  color: #fff;
-  font-size: 16px;
   outline: none;
+  font-size: 16px;
+  background: transparent;
 }
 
 .address-box {
-  background: #000;
-  border: 2px solid #555;
-  border-radius: 12px;
-  padding: 10px;
-  margin-bottom: 12px;
+  border: 2px solid #dfe6e9;
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 14px;
+  background: #ffffff;
 }
 
 .address-box textarea {
   width: 100%;
-  height: 80px;
-  background: transparent;
+  height: 72px;
   border: none;
-  color: #fff;
-  font-size: 15px;
-  resize: none;
   outline: none;
+  resize: none;
+  font-size: 15px;
+  background: transparent;
 }
 
 button {
   width: 100%;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 12px;
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 14px;
   border: none;
   cursor: pointer;
 }
 
 .order {
-  background: #e91e63;
+  background: linear-gradient(135deg, #6c5ce7, #00b894);
   color: #fff;
-  margin-top: 6px;
-}
-
-.whatsapp {
-  background: #25d366;
-  color: #fff;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .msg {
   margin-top: 12px;
+  font-weight: bold;
   text-align: center;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .footer {
   text-align: center;
-  margin: 14px 0 6px;
+  margin: 16px 0 6px;
+  color: #b2bec3;
   font-size: 12px;
-  color: #aaa;
 }
 </style>
 </head>
 
 <body>
 
-<a href="https://wa.me/9647737643575?text=السلام%20عليكم%20هل%20مطبخ%20الاطفال%20متوفر" target="_blank" class="whatsapp-float">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
-
 <div class="container">
 
-  <img class="product" src="https://m.media-amazon.com/images/I/81KTWxfYjcL._AC_SL1500_.jpg">
+  <img class="product" src="https://m.media-amazon.com/images/I/81KTWxfYjcL._AC_SL1500_.jpg" alt="مطبخ أطفال">
 
-  <h1>كل هذا بـ20 الف</h1>
+  <h1>مطبخ أطفال حقيقي</h1>
+
+  <div class="price">بس بـ <span>20 ألف</span></div>
+
+  <div class="subtitle">للطلب اكتب الرقم والعنوان</div>
 
   <div class="form-box">
 
     <div class="input-box">
-      <span>رقم الهاتف</span>
+      <span>الرقم</span>
       <span class="country">+964</span>
       <input type="tel" id="phone" placeholder="77XXXXXXXX"
       inputmode="numeric" maxlength="11"
@@ -184,14 +188,10 @@ button {
     </div>
 
     <div class="address-box">
-      <textarea id="address" placeholder="العنوان الكامل (المحافظة، المنطقة، أقرب نقطة)"></textarea>
+      <textarea id="address" placeholder="العنوان"></textarea>
     </div>
 
     <button class="order" onclick="sendOrder()">اطلب الآن</button>
-
-    <a href="https://wa.me/9647737643575?text=السلام%20عليكم%20هل%20مطبخ%20الاطفال%20متوفر" target="_blank">
-      <button class="whatsapp">تواصل واتساب</button>
-    </a>
 
     <div class="msg" id="msg"></div>
   </div>
@@ -243,7 +243,7 @@ function sendOrder() {
     if (res.ok) {
       ttq.track('Lead');
       localStorage.setItem(STORAGE_KEY, now);
-      msg.style.color = "lightgreen";
+      msg.style.color = "green";
       msg.innerText = "✅ تم إرسال الطلب بنجاح";
       phoneInput.value = "";
       addressInput.value = "";
